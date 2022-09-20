@@ -123,6 +123,7 @@ button {
     padding: 8px 24px;
     color: #f9faf8;
     font-weight: 800;
+    width: 108px;
 }
 
 .one-img {
@@ -147,7 +148,6 @@ button {
     flex: 1 1 auto;
     padding: 32px 10vw 96px;
     gap: 32px;
-    max-width: 100%;
 }
 
 .two h3 {
@@ -160,7 +160,7 @@ button {
     flex-flow: row nowrap;
     justify-content: center;
     flex-shrink: 1;
-    max-width: 100%;
+    width: 324px;
     gap: 48px;
 }
 
@@ -223,7 +223,12 @@ button {
 .four-block {
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
+    margin: 96px auto;
+    padding: 48px 96px;
+    background-color: #3882F6;
+    border-radius: 8px;
+    gap: 64px;
 }
 
 .four-block-words {
@@ -232,19 +237,35 @@ button {
     justify-content: center;
 }
 
+.four-block-big {
+    color: #f9faf8;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.four-block-small.sec-link {
+    font-size: 14px;
+}
+
 .four-block button {
     display: flex;
+    border: 2px solid #f9faf8;
+    width: 124px;
 }
 
 .footer {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    max-height: 100%;
 }
 
 .footer p {
     flex-flow: row nowrap;
     justify-content: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
 
+.footer.sec-link {
+    font-size: 16px;
 }
