@@ -1,6 +1,6 @@
 body * {
     display: flex;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,9 +13,10 @@ body {
     flex: 1 0 auto;
     flex-flow: column nowrap;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: auto;
+    max-width: 100vw;
     margin: 0;
-    overflow: hidden;
 }
 
 .squeeze {
@@ -37,6 +38,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     max-height: 5vh;
+    padding-top: 12px;
 }
 
 .header h1 {
@@ -142,6 +144,46 @@ button {
 .two {
     flex-flow: column nowrap;
     align-items: center;
+    flex: 1 1 auto;
+    padding: 32px 10vw;
+    gap: 32px;
+    max-width: 100%;
+}
+
+.two h3 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+}
+
+.two-blocks {
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-shrink: 1;
+    max-width: 100%;
+    gap: 48px;
+}
+
+.two-block {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 20vh;
+    flex-shrink: 1;
+    gap: 8px;
+}
+
+.box {
+    height: 20vh;
+    width: 20vh;
+    border: 3px solid #3882f6;
+    border-radius: 12px;
+}
+
+.two-block p {
+    text-align: center;
+    font-size: 18px;
+    color: #1F2937;
 }
 
 .three {
@@ -179,10 +221,11 @@ button {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-
+    max-height: 100%;
 }
 
 .footer p {
     flex-flow: row nowrap;
     justify-content: center;
+
 }
