@@ -191,6 +191,7 @@ button {
     background-color: #e5e7eb;
     padding-top: 96px;
     padding-bottom: 96px;
+    justify-content: center;
 
 }
 
@@ -198,6 +199,7 @@ button {
     flex-flow: column nowrap;
     align-items: center;
     gap: 12px;
+    max-width: 926.36px;
 }
 
 .quote blockquote {
